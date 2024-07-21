@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import ErrorPage from '../components/ErrorPage';
-import Router, { useRouter } from "next/router";
+import ErrorPage from '../../components/ErrorPage';
+
 const UnkownPage = () => {
     const messages = [
         'Have you lost your way, kiddo?',
@@ -31,8 +31,7 @@ const UnkownPage = () => {
         setRandomMessage(messages[Math.floor(Math.random() * messages.length)]);
     }, []);
 
-
-    return  randomMessage ? <ErrorPage code={404} message={randomMessage} /> : null
+    return randomMessage ? <ErrorPage code={404} message={randomMessage} /> : null;
 }
 
 export default UnkownPage;

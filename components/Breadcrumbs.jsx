@@ -8,7 +8,7 @@ function Breadcrumbs({ paths }) {
           <li key={index} className="flex items-center">
             {index > 0 && <span className="mx-2"> {style} </span>}
             {index === paths.length - 1 ? (
-              <span>{path.label}</span>
+              <span className='text-amber-400'>{path.label}</span>
             ) : (
               <a href={path.href} className="hover:underline">{path.label}</a>
             )}

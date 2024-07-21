@@ -96,7 +96,7 @@ export default function Index() {
       >
                     {servers.map((server, index) => (
                         <SwiperSlide key={index} >
-                            <div className=" flex relative left-0 md:w-full md:left-0 rounded-lg items-center justify-between bg-gradient-to-r lg:px-30 from-transparent to-amber-800/90 flex items-center justify-start  rounded-xl p-6 shadow-lg transform -translate-x-6 md:-translate-x-0">
+                            <div className=" flex relative left-0 md:w-full md:left-0  items-center  bg-gradient-to-r lg:px-30 from-transparent to-amber-800/90  justify-start  rounded-xl p-6 shadow-lg transform -translate-x-6 md:-translate-x-0">
                                 <div className="flex-grow text-center text-white text-xl font-semibold">
                                     <p>{server.name}</p>
                                 </div>

@@ -74,24 +74,25 @@ export default function MyWork() {
             <p className="text-2xl text-white mb-4 md:mb-0 font-semibold">My Work</p>
             <div className="text-sm text-gray-300 font-sans"><br /><Breadcrumbs paths={breadcrumbsPaths} /></div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-row ">
             <input
               type="text"
               placeholder="Search..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="px-3 py-2 rounded-md border border-gray-300 focus:outline-none"
+              className="px-3 py-2 rounded-md border w-5/6 border-gray-300 focus:outline-none"
             />
             <Menu as="div" className="relative text-left">
               <Menu.Button>
-                <div
-                  onClick={() => setFilter(!filter)}
-                  className="bg-gradient-to-tl from-amber-500 to-amber-700 text-white w-11 h-11 rounded-xl hover:opacity-80 transition-all duration-200 relative"
-                >
-                  <div className="flex w-full h-full items-center justify-center">
-                    <i className="fa-solid fa-filter text-zin-900" />
+     
+                  <div
+                    onClick={() => setFilter(!filter)}
+                    className="bg-gradient-to-tl from-amber-500 to-amber-700 text-white w-11 h-11 rounded-xl hover:opacity-80 transition-all duration-200 relative"
+                  >
+                    <div className="flex w-full h-full items-center justify-center">
+                      <i className="fa-solid fa-filter text-zin-900" />
+                    </div>
                   </div>
-                </div>
               </Menu.Button>
               <Transition
                 show={filter}

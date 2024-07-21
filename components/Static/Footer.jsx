@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="py-10">
+            <footer className="py-10 ">
                 <div className="pt-10 mx-auto">
                     <div className="lg:grid lg:grid-cols-6 gap-20">
                         <div className="col-span-3">
@@ -117,7 +117,7 @@ export default function Footer() {
                                 </p>
                         </div>
                         <p className="text-white text-center sm:text-right text-opacity-50">
-                            {"Powered by Aladdin with ❤️"}
+                            {"Made with ❤️ by Aladdin"}
                         </p>
                     </div>
                 </div>
